@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+
+  /* padding: 20px; */
+  /* background: rgb(130, 106, 251); */
+  background: #1d1d1d;
+}
+
+.register {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_register {
+  position: relative;
+  max-width: 780px;
+  width: 100%;
+  /* background: #fff; */
+  padding: 25px;
+  /* border-radius: 8px; */
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+
+  border-top: 1px solid silver;
+  border-left: 1px solid silver;
+  border-radius: 10px;
+  background: rgba(200, 200, 200, 0.1);
+  backdrop-filter: blure(7px);
+  box-shadow: 4px 4px 4px rgba(68, 68, 68, 0.6);
+}
+
+.container_register header {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container_register .form4 {
+  margin-top: 30px;
+
+}
+
+.form4 .input-box {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.input-box label {
+  color: #fff;
+}
+
+.form4 :where(.input-box input, .select-box select) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  /* color: #707070; */
+  color: #fff;
+  /* margin-top: 8px; */
+  padding: 0 15px;
+
+  border-top: 1px solid silver;
+  border-left: 1px solid silver;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 10px;
+  background: rgba(200, 200, 200, 0.1);
+  backdrop-filter: blure(7px);
+  /* box-shadow: 4px 4px 4px rgba(68, 68, 68, 0.6); */
+}
+
+option {
+  background-color: #fff;
+  color: #707070;
+}
+
+.input-box input:focus {
+  /* box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); */
+}
+
+.form4 .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.input-box input[type="date"]::-webkit-calendar-picker-indicator {
+  background-color: #fff;
+}
+
+.form4 .gender-box {
+  margin-top: 20px;
+}
+
+.gender-box h3 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.form4 :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form4 .gender {
+  column-gap: 5px;
+}
+
+.gender input {
+  /* accent-color: rgb(130, 106, 251); */
+}
+
+.form4 :where(.gender input, .gender label) {
+  cursor: pointer;
+  color: #fff;
+}
+
+.gender label {
+  color: #fff;
+}
+
+.address :where(input, .select-box) {
+  margin-top: 10px;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  /* color: #707070; */
+  color: #fff;
+  font-size: 1rem;
+  border-top: 1px solid silver;
+  border-left: 1px solid silver;
+  /* -moz-appearance: none; */
+  /* -webkit-appearance: none; */
+  appearance: none;
+  /* background: rgba(200, 200, 200, 0.1); */
+}
+
+.form4 button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  /* background: rgb(130, 106, 251); */
+  background: #1D1D1D;
+}
+
+.form4 button:hover {
+  /* background: rgb(88, 56, 250); */
+
+  border-top: 1px solid silver;
+  border-left: 1px solid silver;
+  border-radius: 10px;
+  background: rgba(200, 200, 200, 0.1);
+  backdrop-filter: blure(7px);
+  box-shadow: 4px 4px 4px rgba(68, 68, 68, 0.6);
+}
+
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form4 .column {
+    flex-wrap: wrap;
+  }
+
+  .form4 :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}

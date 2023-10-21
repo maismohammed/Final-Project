@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+body {
+  /* background: white; */
+}
+
+div.jobContainer {
+  /* max-width: 80%; */
+  margin: 0 auto;
+}
+
+div.group {
+  color: #fff;
+  margin-top: -25px;
+  border-top: 1px solid silver;
+  border-left: 1px solid silver;
+  background: rgba(200, 200, 200, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 4px 4px 4px rgba(68, 68, 68, 0.6);
+  border-radius: 6px;
+}
+
+div.firstDiv {
+  height: 60px;
+  border-top: 1px solid silver;
+  border-left: 1px solid silver;
+  background: rgba(200, 200, 200, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 4px 4px 4px rgba(68, 68, 68, 0.6);
+  border-radius: 6px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.Bb {
+  color: #fff;
+  background-color: #1D1D1D;
+  border-radius: 6px;
+}
+
+.Bb input[type="button"]:hover {
+  border-top: 1px solid silver;
+  border-left: 1px solid silver;
+  background: rgba(200, 200, 200, 0.1);
+  backdrop-filter: blure(100px);
+  box-shadow: 4px 4px 4px rgba(68, 68, 68, 0.6);
+}
+
+div.firstDiv button {
+  color: #fff;
+  background: #1D1D1D;
+  border-radius: 6px;
+  height: 45px;
+  margin: 5px;
+}
+
+::placeholder {
+  padding-left: 10px;
+}
+
+input {
+  color: #fff;
+  padding-left: 10px;
+}
+
+/* li{
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+} */
+.flex {
+  height: 6vh !important;
+}
+
+/* li:hover::before{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 100%;
+  right: 0;
+  bottom: -10px;
+} */
+
+/* .icon{
+  cursor: pointer;
+} */
+
+/* .card{
+  background: url(/src/Assets/testimonial-bg.png);
+} */
